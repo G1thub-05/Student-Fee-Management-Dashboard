@@ -31,7 +31,6 @@ The structure separates frontend components, API communication, styling, utiliti
 🧰 Technologies Used
 
 ```text
-
 1.  HTML5               - Application structure
 2.  CSS3                - Styling and responsive layout
 3.  JavaScript (ES6+)   - Calculations and application logic
@@ -200,7 +199,6 @@ Step - 5: Verify Application Features
 ##### **1. How to Handle Paid Amount Exceeding Total Fee**
 
 ```text
-
 If the paid amount exceeds the total fee, I would validate the payment data before calculating the pending fee.
 
 - Validation: Check whether the paid amount is greater than the total fee.
