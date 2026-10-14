@@ -185,7 +185,7 @@ Step - 5: Verify Application Features
 ```
 
 ## **📝 Assumptions and Known Limitations**
-
+```text
 - Fee calculations assume valid, non-negative monetary amounts.
 - Overpayments require an explicit business rule.
 - Students may make payments in multiple installments.
@@ -194,12 +194,13 @@ Step - 5: Verify Application Features
 - Search, filtering, and sorting operate on the student records available to the frontend.
 - Authentication, authorization, and production-grade payment processing are not claimed unless implemented.
 - Deployment-specific configuration must be supplied separately.
+```
 
 ## **📝 Answers or explanations for the SQL and logic questions.**
 
 ##### **1. How to Handle Paid Amount Exceeding Total Fee**
 
-<p alighn=justify>
+```text
 
 If the paid amount exceeds the total fee, I would validate the payment data before calculating the pending fee.
 
@@ -209,13 +210,11 @@ If the paid amount exceeds the total fee, I would validate the payment data befo
 - Accurate Calculation: Calculate the pending fee only after validating the amounts.
 
 For example, if the total fee is ₹5,000 and the paid amount is ₹6,000, the excess payment is ₹1,000. The application should flag this condition and handle the excess according to the defined business rules. This approach prevents incorrect fee calculations and maintains data consistency.
-
-<p/>
+```
 
 ##### **2. Explain how your design would support multiple payments by the same student.**
 
-<p alighn=justify>
-
+```text
 The database uses a one-to-many relationship between Students and Payments.
 
 - Each student has a unique record in the Students table.
@@ -226,9 +225,10 @@ The database uses a one-to-many relationship between Students and Payments.
 - Each installment is stored as a separate payment record without overwriting previous payments.
 
 For example, if a student's total fee is ₹5,000 and they pay ₹2,000 and ₹1,500 in two installments, the database stores two separate payment records. The total paid is ₹3,500, and the pending fee is ₹1,500.
+```
 
 **Why This Design?**
-
+```text
 - Primary keys: Uniquely identify students and payment records.
 - Foreign keys: Maintain referential integrity between students and payments.
 - Separate payment records: Support multiple installments without overwriting - payment history.
@@ -236,18 +236,18 @@ For example, if a student's total fee is ₹5,000 and they pay ₹2,000 and ₹1
 - Aggregation queries: Calculate total collected amounts and individual student balances.
 
 This schema separates student information from payment transactions and supports accurate fee tracking, payment history, and reporting.
-
-<p/>
+```
 
 ##### **3. INNER JOIN vs LEFT JOIN**
-
+```text
 - NNER JOIN: Returns only records that have matching rows in both tables.
 - LEFT JOIN: Returns every row from the left table, including rows with no match in the right table. Missing right-side values are NULL.
 - A LEFT JOIN is useful for showing students who have not made any payments.
+```
 
 ##### **4. Why is a foreign key useful?**
 
-<p alighn=justify>
+```text
 A foreign key maintains referential integrity between related tables. For example, Payments.student_id references Students.id, preventing payment records from referencing nonexistent students when the constraint is enforced.
 
 - Maintains data integrity: Prevents payments from referencing students who do not exist.
@@ -256,5 +256,4 @@ A foreign key maintains referential integrity between related tables. For exampl
 - Supports accurate reporting: Allows payment totals and student fee balances to be calculated using reliable relationships between tables.
 
 For example, if student ID 10 does not exist in the Students table, the database will reject a payment record referencing student_id = 10. Thus, a foreign key helps maintain consistent and reliable student payment data.
-
-</p>
+```
