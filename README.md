@@ -1,4 +1,4 @@
-## **🎓 Project Overview (Student Fee Management Dashboard)**
+## **🎓 Project Overview**
 
 <p align="justify">
 A responsive web application for displaying and managing student fee information. The dashboard helps track total fees, collected payments, pending amounts, and individual student payment status. This project is developed as part of the Web Developer Take-Home Technical Assignment. The Student Fee Management Dashboard provides a simple interface to monitor student fee records and summarize payment information. The application focuses on reusable React components, clear fee calculations, responsive design, error handling, and database fundamentals.
@@ -68,8 +68,10 @@ student-fee-dashboard/
 │   ├── package.json
 │   ├── package-lock.json
 │   └── vite.config.js
-│
-├── backend/                       # Spring Boot backend
+
+```
+```text
+├── backend/                         # Spring Boot backend
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/
