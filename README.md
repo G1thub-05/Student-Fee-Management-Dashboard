@@ -147,7 +147,7 @@ Step - 3: Spring Boot Backend Setup
 ```
 
 ```text
-Spring boot backend.env
+Spring boot backend .env Setup
 
 - DB_URL=jdbc:mysql://localhost:3306/student_fee_db
 - DB_USERNAME=<YOUR_DB_USERNAME>
