@@ -119,7 +119,6 @@ Install the following tools:
 ## **⚙️ Setup Instructions (How to Run the Application Locally)**
 
 ```text
-
 Step - 1: Open Repository → <Student-Fee-Management-Dashboard-Repo-Link>
 
   - Option 1: Download ZIP 📦 →  Click on the <>Code button → Select Download ZIP → Extract the ZIP file
