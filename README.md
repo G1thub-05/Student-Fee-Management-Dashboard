@@ -5,7 +5,7 @@ A responsive web application for displaying and managing student fee information
 </p>
 
 <div align="center">
-<a href="https://g1thub-05.github.io/PortFolio/">
+<a href="https://student-fee-management-dashboard.vercel.app/">
   <img src="https://img.shields.io/badge/🌐%20Live%20Website-Visit-0072ff?style=for-the-badge" alt="Live Portfolio"/>
 </a>
 
