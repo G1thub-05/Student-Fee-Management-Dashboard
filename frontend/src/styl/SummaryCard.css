@@ -1,0 +1,64 @@
+.summary-card {
+	min-width: 0;
+	padding: 22px;
+	overflow-wrap: anywhere;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	box-shadow: 0 4px 15px rgba(30, 50, 90, 0.04);
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 24px rgba(30, 50, 90, 0.08);
+}
+
+.summary-card p {
+	margin: 0 0 14px;
+	color: var(--muted);
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.summary-card h2 {
+	margin: 0;
+	color: var(--text);
+	font-size: clamp(20px, 2vw, 25px);
+	line-height: 1.4;
+	overflow-wrap: anywhere;
+}
+
+.students-card {
+	border-top: 4px solid #5576e8;
+}
+
+.fees-card {
+	border-top: 4px solid #8b5cf6;
+}
+
+.collected-card {
+	border-top: 4px solid #18a875;
+}
+
+.pending-card {
+	border-top: 4px solid #f0a43b;
+}
+
+@media (max-width: 600px) {
+	.summary-card {
+		padding: 17px 13px;
+		border-radius: 11px;
+	}
+
+	.summary-card p {
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.summary-card h2 {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,85 @@
+.page-header {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 28px 32px;
+	margin-bottom: 28px;
+	border: 1px solid #263a60;
+	border-radius: 18px;
+	background: linear-gradient(120deg, #101c36, #243b70);
+	box-shadow: 0 10px 28px rgba(16, 28, 54, 0.12);
+}
+
+.brand-icon {
+	display: grid;
+	place-items: center;
+	width: 66px;
+	height: 66px;
+	flex-shrink: 0;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 18px;
+	background: #647df5;
+	color: #fff;
+	font-size: 23px;
+	font-weight: 800;
+	letter-spacing: -1px;
+}
+
+.header-content {
+	min-width: 0;
+}
+
+.header-content .eyebrow {
+	margin: 0;
+	color: #b9c8ef;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.header-content h1 {
+	margin: 7px 0 9px;
+	color: #fff;
+	font-size: clamp(28px, 4vw, 40px);
+	line-height: 1.2;
+	font-weight: 750;
+	letter-spacing: -1px;
+}
+
+.header-content .subtitle {
+	margin: 0;
+	color: #d0d9eb;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+	.page-header {
+		align-items: flex-start;
+		gap: 14px;
+		padding: 22px 16px;
+		border-radius: 15px;
+	}
+
+	.brand-icon {
+		width: 48px;
+		height: 48px;
+		border-radius: 13px;
+		font-size: 18px;
+	}
+
+	.header-content .eyebrow {
+		font-size: 9px;
+		letter-spacing: 1.1px;
+	}
+
+	.header-content h1 {
+		margin: 6px 0 8px;
+		font-size: 25px;
+		letter-spacing: -0.6px;
+	}
+
+	.header-content .subtitle {
+		font-size: 12px;
+	}
+}

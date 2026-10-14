@@ -1,0 +1,20 @@
+.badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 10px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.badge.paid {
+	color: #16794b;
+	background: #e4f7ec;
+}
+
+.badge.pending {
+	color: #a45c00;
+	background: #fff1d6;
+}

@@ -1,0 +1,32 @@
+.student-name {
+	color: #253858;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.student-id {
+	display: block;
+	margin-top: 5px;
+	color: #8492a6;
+	font-size: 11px;
+}
+
+.class-badge {
+	display: inline-block;
+	padding: 6px 9px;
+	border-radius: 7px;
+	background: #f1f5f9;
+	color: #475569;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.paid-amount {
+	color: #16805d;
+	font-weight: 600;
+}
+
+.pending-amount {
+	color: #bd7618;
+	font-weight: 700;
+}

@@ -1,0 +1,25 @@
+<escape><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+
+  <!-- Graduation cap -->
+  <path d="M8 20 31 10 56 20 32 31Z" fill="#ffffff"/>
+  <path d="M17 25v10c8 7 23 7 31 0V25L32 32Z" fill="#93c5fd"/>
+  <path d="M55 20v15" stroke="#facc15" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="55" cy="37" r="3" fill="#facc15"/>
+
+  <!-- Fee receipt -->
+  <rect x="13" y="39" width="27" height="18" rx="3" fill="#ffffff"/>
+  <path d="M18 44h16M18 49h9" stroke="#93a9d0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Rupee coin -->
+  <circle cx="45" cy="45" r="13" fill="#fbbf24"/>
+  <circle cx="45" cy="45" r="10" fill="#f59e0b"/>
+  <path d="M40 40h10M40 43h10l-8 9" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></escape>
