@@ -27,8 +27,6 @@ A responsive web application for displaying and managing student fee information
 
 The structure separates frontend components, API communication, styling, utilities, backend code, and SQL documentation. The tree is illustrative; retain the actual files and folders present in the repository.
 
-🧰 Technologies Used
-
 ```text
 1.  HTML5               - Application structure
 2.  CSS3                - Styling and responsive layout
